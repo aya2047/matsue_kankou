@@ -1,0 +1,126 @@
+@charset "utf-8";
+@media (max-width:1000px){
+    h2::before,h2::after{
+        display: none;
+    }
+    .container{
+        padding: 0 5vw;
+    }
+    li{
+        margin: 0;
+    }
+    /* ヘッダー */
+    .header-inner div:nth-child(1) img{
+        width: 100%;
+        height: 90vh;
+        object-fit: cover;
+        object-position: 30% 0;
+    }
+    .header-inner div:nth-child(3),.header-inner div:nth-child(4){
+        display: none;
+    }
+    /* ナビゲーション */
+    .navi{
+        flex-wrap: wrap;
+        margin: 5vh auto;
+    }
+    .navi img{
+        width: 15vh;
+        margin: 1rem;
+    }
+    /* メイン */
+    main{
+        max-width: 700px;
+        margin: 0 auto;
+    }
+    .main-inner{
+        margin-bottom: 60px;
+    }
+    .pc-main{
+        display: none;
+    }
+    .sp-main{
+        display: inline;
+    }
+    .sp-main li{
+        padding: 5px;
+        margin: 0;
+    }
+    .main-contents-bg-pl{
+        background-color: #d7caed;
+        border-radius: 15px;
+        margin-top: -43px;
+    }
+    .main-contents-bg-gr{
+        background-color: #b7dad3;
+        border-radius: 15px;
+        margin-top: -43px;
+    }
+    .main-contents-bg-pk{
+        background-color: #ffd6d9;
+        border-radius: 15px;
+        margin-top: -43px;
+    }
+    .main-contents-bg-ye{
+        background-color: #fff5c0;
+        border-radius: 15px;
+        margin-top: -43px;
+    }
+    .main-contents{
+        margin: 0 auto;
+        padding: 50px 30px 50px;
+    }
+    .main-contents-2{
+        margin: 0 auto;
+        padding: 50px 15px 55px;
+    }
+    .cap-number-2{
+        font-family: "Pinyon Script", cursive;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 2.5rem;
+        display: block;
+    }
+    .cap-title-2{
+        font-size: 1.8rem;
+        display: block;
+    }
+    .img-2{
+        width: 100%;
+    }
+    /* フッター */
+    .footer-bg{
+        margin-bottom: -27px;
+    }
+    .footer-content{
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-content li{
+        border: none;
+    }
+    .footer-content li img{
+        width: 45vw;
+    }
+}
+@media (max-width:490px){
+    /* ヘッダー */
+    .header-inner div:nth-child(2){
+        top: 0;
+        left: 50%;
+        width: 100%;
+        padding: 10px;
+        transform: translate(-50%,0%);
+    }
+    /* フッター */
+    .footer-bunner{
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-bunner li:first-child{
+        margin-bottom: 30px;
+    }
+    .footer-bunner li img{
+        width: 70vw;
+    }
+}

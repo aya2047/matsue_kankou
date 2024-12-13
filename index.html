@@ -4,15 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
     <title>松江のいいとこ一気見！</title>
 </head>
 <body>
     <header>
         <div class="header-inner">
             <div><img src="img/トップ画像.jpg" alt="塩見縄手を歩く女性二人"></div>
-            <div><img src="img/トップ紹介.jpg" alt="松江のいいとこ一気見　初めて松江を訪れる人や松江の観光名所、有名スポットを知りたい人に向けて押さえておきたいスポットをご紹介します"></div>
+            <div><img src="img/トップ紹介.jpg" class="top-title" alt="松江のいいとこ一気見　初めて松江を訪れる人や松江の観光名所、有名スポットを知りたい人に向けて押さえておきたいスポットをご紹介します"></div>
             <div><a href="#bunner-1"><img src="img/バナーリンク_パス.png" alt="デイパス販売リンクボタン"></a></div>
             <div><a href="#bunner-2"><img src="img/バナーリンク_特産品.png" alt="特産品プレゼントキャンペーンリンクボタン"></a></div>
         </div>
@@ -31,7 +35,7 @@
         <div class="container">
             <div id="main-inner-1" class="main-inner">
                 <h2>歴史・神社</h2>
-                <ul class="main-inner-flex">
+                <ul class="main-inner-flex pc-main">
                     <li>
                         <div class="bgUD">
                             <span class="mask">
@@ -64,10 +68,47 @@
                         </div>
                     </li>
                 </ul>
+                <ul class="sp-main">
+                    <div>
+                        <li>
+                            <img src="img/松江城.png" class="img-2" alt="松江城の写真">
+                            <div class="main-contents-bg-pl">
+                                <div class="main-contents">
+                                    <span class="cap-number-2">01</span>
+                                    <span class="cap-title-2">松江城</span>
+                                    <span>松江のシンボルであり、国宝の松江城、天守閣からは松江の街並みを一望できます。</span>
+                                    <br><a href="#" class="btnarrow btn-purple">view more</a>
+                                </div>
+                            </div>
+                        </li>
+                    </div>
+                    <div class="main-inner-flex">
+                        <li>
+                            <img src="img/鏡池.png" alt="八重垣神社鏡池の写真">
+                            <div class="main-contents-bg-pl">
+                                <div class="main-contents-2">
+                                    <span class="cap-number-2">02</span>
+                                    <span class="cap-title-2">八重垣神社</span>
+                                    <br><a href="#" class="btnarrow btn-purple">view more</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="img/黄泉比良坂.png" alt="黄泉比良坂の写真">
+                            <div class="main-contents-bg-pl">
+                                <div class="main-contents-2">
+                                    <span class="cap-number-2">03</span>
+                                    <span class="cap-title-2">黄泉比良坂</span>
+                                    <br><a href="#" class="btnarrow btn-purple">view more</a>
+                                </div>
+                            </div>
+                        </li>
+                    </div>
+                </ul>
             </div>
             <div id="main-inner-2" class="main-inner">
                 <h2>リラクゼーション</h2>
-                <ul class="main-inner-flex">
+                <ul class="main-inner-flex pc-main">
                     <li>
                         <div class="bgUD">
                             <span class="mask">
@@ -107,10 +148,45 @@
                         </ul>
                     </li>
                 </ul>
+                <ul class="sp-main">
+                    <li>
+                        <img src="img/宍道湖.png" class="img-2" alt="宍道湖の写真">
+                        <div class="main-contents-bg-gr">
+                            <div class="main-contents">
+                                <span class="cap-number-2">04</span>
+                                <span class="cap-title-2">宍道湖</span>
+                                <span>日本百景の一つであり、夕日の絶景が見られる絶好の映えスポット。宍道湖七珍と呼ばれる魚介類も生息しています。</span>
+                                <br><a href="#" class="btnarrow btn-green">view more</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/玉造温泉.png" class="img-2" alt="玉造温泉の写真">
+                        <div class="main-contents-bg-gr">
+                            <div class="main-contents">
+                                <span class="cap-number-2">05</span>
+                                <span class="cap-title-2">玉造温泉</span>
+                                <span>日本最古の湯のひとつとも言われている美肌の名湯。温泉だけでなくグルメやスポット巡りも楽しめます。</span>
+                                <br><a href="#" class="btnarrow btn-green">view more</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/由志園.png" class="img-2" alt="由志園の写真">
+                        <div class="main-contents-bg-gr">
+                            <div class="main-contents">
+                                <span class="cap-number-2">06</span>
+                                <span class="cap-title-2">由志園</span>
+                                <span>四季折々を楽しめる日本庭園。特に5月頃に見ごろとなる牡丹が有名です。</span>
+                                <br><a href="#" class="btnarrow btn-green">view more</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
             </div>
             <div id="main-inner-3" class="main-inner">
                 <h2>グルメ</h2>
-                <ul class="main-inner-flex">
+                <ul class="main-inner-flex pc-main">
                     <li>
                         <div class="bgUD">
                             <span class="mask">
@@ -134,10 +210,34 @@
                         </div>    
                     </li>
                 </ul>
+                <ul class="sp-main">
+                    <li>
+                        <img src="img/和菓子.png" class="img-2" alt="松江の上生菓子の写真">
+                        <div class="main-contents-bg-pk">
+                            <div class="main-contents">
+                                <span class="cap-number-2">07</span>
+                                <span class="cap-title-2">和菓子</span>
+                                <span>日本三大菓子処と言われる松江の上品な和菓子</span>
+                                <br><a href="#" class="btnarrow btn-pink">view more</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/出雲そば.png" class="img-2" alt="出雲そばの写真">
+                        <div class="main-contents-bg-pk">
+                            <div class="main-contents">
+                                <span class="cap-number-2">08</span>
+                                <span class="cap-title-2">出雲そば</span>
+                                <span>日本三大菓子処と言われる松江の上品な和菓子</span>
+                                <br><a href="#" class="btnarrow btn-pink">view more</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
             </div>
             <div id="main-inner-4" class="main-inner">
                 <h2>話題のスポット</h2>
-                <ul class="main-inner-flex">
+                <ul class="main-inner-flex pc-main">
                     <li>
                         <div class="bgUD">
                             <span class="mask">
@@ -168,6 +268,41 @@
                                 <a href="#" class="cap btnarrow btn-yellow btn-pos-1">view more</a>
                             </span>
                         </div>   
+                    </li>
+                </ul>
+                <ul class="sp-main">
+                    <div class="main-inner-flex">
+                        <li>
+                            <img src="img/江島大橋.png" alt="江島大橋の写真">
+                            <div class="main-contents-bg-ye">
+                                <div class="main-contents-2">
+                                    <span class="cap-number-2">09</span>
+                                    <span class="cap-title-2">江島大橋</span>
+                                    <br><a href="#" class="btnarrow btn-yellow">view more</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="img/遊覧船.png" alt="遊覧船の写真">
+                            <div class="main-contents-bg-ye">
+                                <div class="main-contents-2">
+                                    <span class="cap-number-2">10</span>
+                                    <span class="cap-title-2">遊覧船</span>
+                                    <br><a href="#" class="btnarrow btn-yellow">view more</a>
+                                </div>
+                            </div>
+                        </li>
+                    </div>
+                    <li>
+                        <img src="img/小泉八雲記念館.png" class="img-2" alt="小泉八雲記念館の写真">
+                        <div class="main-contents-bg-ye">
+                            <div class="main-contents">
+                                <span class="cap-number-2">11</span>
+                                <span class="cap-title-2">小泉八雲記念館</span>
+                                <span>2025秋朝ドラ「ばけばけ」主人公の夫　ラフカディオ・ハーンの旧邸宅。</span>
+                                <br><a href="#" class="btnarrow btn-yellow">view more</a>
+                            </div>
+                        </div>
                     </li>
                 </ul>
             </div>
